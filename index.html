@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>WIDE FOOD RECIPES</title>
+</head>
+<body>
+
+    <div class="center-container">
+        <h1>WIDE FOOD RECIPES</h1>
+
+        <div class="bigtxt"><label for="mealInput">Explore a carefully curated selection of luxurious recipes that capture the essence of refined Indian dining. From expertly spiced curries to flawlessly prepared tandoori specialties, our platform is dedicated to delivering sophisticated and authentic culinary experiences to your</label></div>
+        <input type="text" id="mealInput" placeholder="e.g., Chicken">
+        <button onclick="searchMeals()">Search</button>
+
+        <div id="random-meal" class="meal-card" onclick="showRandomMeal()">
+            <h2 id="random-meal-title">Random Meal of the Day</h2>
+            <img id="random-meal-image" src="" alt="">
+            <button onclick="regenerateRandomMeal()">Regenerate</button>
+        </div>
+    </div>
+
+    <div id="meal-container" class="flex-container" onclick="handleMealContainerClick()"></div>
+
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div id="popup-content"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 by Shaliq.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

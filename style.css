@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.center-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#meal-container, .popup, .recipe-steps {
+    background-color: #fff;
+    color: #000;
+}
+
+.meal-card, .popup, .recipe-steps {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#meal-container {
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 30px auto;
+    background-color: rgb(48, 8, 8);
+    color: white;
+    padding: 20px;
+}
+
+
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px; 
+   
+    color: rgb(0, 0, 0);
+}
+
+.meal-card {
+    display: inline-block;
+    width: 200px;
+    margin-right: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.meal-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+
+.recipe-steps {
+    padding: 20px;
+    text-align: left;
+}
+
+.recipe-steps h3 {
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe-steps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recipe-steps li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+#mealInput {
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#random-meal {
+    margin-top: 20px;
+}
+
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.flex-container{
+    background-color: green;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
